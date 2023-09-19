@@ -1,16 +1,20 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Header from '@/app/Header'
+import Overlay from '@/components/Overlay'
+import Bio from '@/components/bio'
 
 export default function Page() {
   return (
-
+    <Overlay>
+    
     <div className={styles.main}>
     
+ 
       
-      <h2>Is this Genos?</h2>
+      
+      
       
      </div> 
-
+  </Overlay>
   )
 }

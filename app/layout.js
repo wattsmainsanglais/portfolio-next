@@ -4,6 +4,7 @@ import headerStyle from './header.module.css'
 import profilePic from '../public/images/profilebw.jpg'
 import Image from 'next/image'
 
+
  
 const genos = Genos({
   weight: '300',
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
             </aside>
             <h1>Andrew Watts Development</h1>
           </header> 
+         
       {children}
       </body>
     </html>

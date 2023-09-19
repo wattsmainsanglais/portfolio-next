@@ -1,0 +1,36 @@
+
+
+
+
+.bio article {
+	background-color: #38353b62;
+}
+
+.about {
+	padding: 0% 1% 1% 1%;
+	margin-top: 11%;
+	margin-bottom: 2%;
+}
+
+.skills {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.animated-header {
+	animation: skew 5s infinite;
+	transform: skew(20deg);
+	animation-direction: alternate;
+}
+
+@keyframes skew {
+    
+0% {
+	transform: skewX(20deg);
+}
+
+100%{
+    transform: skewX(-20deg);
+}
+
+}
