@@ -38,13 +38,21 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  
+  color: rgb(255, 255, 255);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-image: url('../public/images/cascade.jpg');
+  
+  /*background-image: url('../public/images/cascade.jpg');
   background-repeat: no-repeat;
-  background-size: cover ;
+  background-size: cover ;*/
+  background-image: linear-gradient(to bottom right, #907ff3, #D4D0C5);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+
 }
 
 a {
@@ -52,8 +60,7 @@ a {
   text-decoration: none;
 }
 
+
 @media (prefers-color-scheme: dark) {
-  html {
-  
-  }
+
 }

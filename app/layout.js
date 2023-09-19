@@ -1,7 +1,18 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Genos } from 'next/font/google'
+import headerStyle from './header.module.css'
+import profilePic from '../public/images/profilebw.jpg'
+import Image from 'next/image'
 
-const inter = Inter({ subsets: ['latin'] })
+ 
+const genos = Genos({
+  weight: '300',
+  subsets: ['latin']
+
+})
+
+
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,8 +21,25 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={genos.className}>
+      <body>
+        <header className={headerStyle.headercss}>
+            <aside className="profile">
+                <Image
+               
+                src={profilePic}
+                alt='Picture of Andrew Watts (awattsdev)'
+                />
+                
+                <div className="mask">
+                    
+                </div>
+               
+            </aside>
+            <h1>Andrew Watts Development</h1>
+          </header> 
+      {children}
+      </body>
     </html>
   )
 }

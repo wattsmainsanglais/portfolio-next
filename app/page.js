@@ -1,20 +1,16 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Header from '@/components/Header'
+import Header from '@/app/Header'
 
-export default function Home() {
+export default function Page() {
   return (
 
-    <div>
+    <div className={styles.main}>
     
-      <Header></Header>
-      <main className={styles.main}>
-        
+      
+      <h2>Is this Genos?</h2>
+      
+     </div> 
 
-        
-      
-      </main>
-      
-    </div>
   )
 }
