@@ -17,10 +17,26 @@
 	margin-bottom: 5%;
 }
 
-.animated-header {
+.animatedHeader {
+	font-size: 1.9em;
+	padding: 2% 0;
 	animation: skew 5s infinite;
 	transform: skew(20deg);
 	animation-direction: alternate;
+}
+
+.skillsLogo{
+	display: flex;
+	justify-content: center;
+}
+
+.skillsImg {
+	width: 100px;
+	height: 90px;
+	background-color: #a79ddf69;
+	padding: 1px;
+	border-radius: 10px;
+	margin: 1%;
 }
 
 @keyframes skew {
