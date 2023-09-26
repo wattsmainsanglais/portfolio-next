@@ -7,7 +7,7 @@ export default function Projects(){
 
     return(
         <section className='projects'>
-            <h2>Current Projects</h2>
+            <h2 className="animatedHeader">Projects</h2>
 
              <SingleProject heading='Nature Dopes' src={ndThumb} alt='Nature Dopes Thumbnail' desc="Nature Dopes 
              is an ongoing project dedicated to creating a site firstly for the appreciation of natural flora, secondly as an educational tool. 

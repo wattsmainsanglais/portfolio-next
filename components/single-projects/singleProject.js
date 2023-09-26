@@ -1,14 +1,15 @@
 import Image from "next/image"
+import styles from './singleProject.module.css'
 
 export default function SingleProject({heading ,src, alt, desc}){
 
     return(
         
-        <section>
+        <section className={styles.projectSection}>
 
-            <h2>{heading}</h2>
+            <h2 className={styles.projectSection_heading}>{heading}</h2>
 
-            <article>
+            <article className={styles.projectSection_project}>
             <Image
             src={src}
             alt={alt}

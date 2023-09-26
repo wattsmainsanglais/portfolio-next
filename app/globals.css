@@ -70,10 +70,33 @@ p {
 }
 
 .projects{
+  padding: 1%;
   margin-top: 3%;
   background-color: #38353b62;
 
 }
+
+.animatedHeader {
+	font-size: 1.9em;
+	padding: 2% 0;
+	animation: skew 5s infinite;
+	transform: skew(20deg);
+	animation-direction: alternate;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@keyframes skew {
+    
+  0% {
+    transform: skewX(20deg);
+  }
+  
+  100%{
+      transform: skewX(-20deg);
+  }
+  
+  }
 
 
 @media (prefers-color-scheme: dark) {
